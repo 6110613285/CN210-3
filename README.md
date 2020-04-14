@@ -8,12 +8,15 @@
 
 * **คำอธิบายเกี่ยวกับการบ้านครั้งที่1**
 
-Jump Format มี 2 ส่วน
+**Jump Format** มี 2 ส่วน
 
-|op code (6 bits)|Offset(26 bits)|
-|----------------|---------------|
+|Op Code (6 bits)| Address (26 bits)|
+|----------------|------------------|
 
-1.**Op Code(Operation Code)** มี ความยาว 6 bits และ สำหรับ J-Format จะใช้ Op Code คือ `000010`
+ได้แก่
+1. **Op Code (Operation Code)** : มีความยาว *6 bits* และ สำหรับ J-Format จะใช้ Op Code คือ `000010`
+2. **Address (Jump Target Address)** : มีความยาว *26 bits* 
+   * ที่จริงแล้วใน สถาปัตยกรรมแบบ MIPs รหัสคำสั่งจะมีความยาว *32 bits* 
 
 ## HomeWork#2
 * **คลิปวีดีโอของการบ้านครั้งที่2**
