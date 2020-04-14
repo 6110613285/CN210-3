@@ -2,18 +2,15 @@
 > หน้าเพจนี้จัดทำขึ้นเพื่อรวมรวมและสรุปเนื้อหาจากวิชา CN210 Computer Architecture ประจำปีการศึกษาที่ 2/2562
 
 ## HomeWork#1
-**Jump Format**
+**Jump Format (J-Format)**
 * **คลิปวีดีโอของการบ้านครั้งที่1**
 > [Click Here for HomeWork#1 video](https://youtu.be/37fsqcEbHfk)
 
 * **คำอธิบายเกี่ยวกับการบ้านครั้งที่1**
 
-Jump Format
+Jump Format มี 2 ส่วน
 
-| Op Code |    Offset    |
-|---------|--------------|
-
-   6 bits    26 bits
+1.**Op Code(Operation Code)** มี ความยาว 6 bits และ สำหรับ J-Format จะใช้ Op Code คือ '000010'
 
 ## HomeWork#2
 * **คลิปวีดีโอของการบ้านครั้งที่2**
