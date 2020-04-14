@@ -1,6 +1,7 @@
 # Summary Report for CN210 : Computer Architecture
 ## HomeWork#1
-[Click Here for HomeWork#1 Clip](https://youtu.be/37fsqcEbHfk)
+คลิปวีดีโอของการบ้านครั้งที่1
+> [Click Here for HomeWork#1 Clip](https://youtu.be/37fsqcEbHfk)
 
 #### คำอธิบายเกี่ยวกับการบ้านครั้งที่1
 
