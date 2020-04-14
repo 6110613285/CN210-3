@@ -13,6 +13,8 @@ Jump Format
 | Op Code |    Offset    |
 |---------|--------------|
 
+   6 bits    26 bits
+
 ## HomeWork#2
 * **คลิปวีดีโอของการบ้านครั้งที่2**
 > [Click Here for HomeWork#2 video](https://youtu.be/GqOXGPJogCU)
