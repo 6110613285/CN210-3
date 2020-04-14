@@ -10,6 +10,9 @@
 
 Jump Format มี 2 ส่วน
 
+|op code (6 bits)|Offset(26 bits)|
+|----------------|---------------|
+
 1.**Op Code(Operation Code)** มี ความยาว 6 bits และ สำหรับ J-Format จะใช้ Op Code คือ `000010`
 
 ## HomeWork#2
