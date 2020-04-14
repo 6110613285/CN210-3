@@ -3,7 +3,7 @@
 
 ## HomeWork#1
 * คลิปวีดีโอของการบ้านครั้งที่1
->> [Click Here for HomeWork#1 video](https://youtu.be/37fsqcEbHfk)
+> [Click Here for HomeWork#1 video](https://youtu.be/37fsqcEbHfk)
 
 * **คำอธิบายเกี่ยวกับการบ้านครั้งที่1**
 
