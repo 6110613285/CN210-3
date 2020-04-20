@@ -13,10 +13,12 @@
 |Op Code (6 bits)| Address (26 bits)|
 |----------------|------------------|
 
+//ทำไมไม่ขึ้นตาราง TT
+
 ได้แก่
 1. **Op Code (Operation Code)** : มีความยาว *6 bits* และ สำหรับ J-Format จะใช้ Op Code คือ `000010`
 2. **Address (Jump Target Address)** : มีความยาว *26 bits* 
-   * ที่จริงแล้วใน สถาปัตยกรรมแบบ MIPs รหัสคำสั่งจะมีความยาว *32 bits* 
+   * ที่จริงแล้วใน สถาปัตยกรรมแบบ MIPs รหัสคำสั่งจะมีความยาว *32 bits* แต่จะต้องนำมาทำเป็น *26 bits* เพื่อใช้เป็น Address 
 
 ## HomeWork#2
 * **คลิปวีดีโอของการบ้านครั้งที่2**
@@ -50,6 +52,6 @@
 
 ## HomeWork#7
 * **คลิปวีดีโอของการบ้านครั้งที่7**
-> [Click Here for HomeWork#7 video]()
+> [Click Here for HomeWork#7 video](https://youtu.be/J2nr4AUF03M)
 
 * **คำอธิบายเกี่ยวกับการบ้านครั้งที่7**
