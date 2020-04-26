@@ -15,6 +15,8 @@ ________________________________________________________________________________
 
 ![alt text](https://github.com/gringgyy/CN210/blob/master/Untitled%20Diagram.png)
 
+![image](https://drive.google.com/file/d/1G4yCJ2F0W0aCevC5mYz25ogJMSFLmAv4/view?usp=sharing)
+
   ได้แก่
   1. **Op Code (Operation Code)** : มีความยาว *6 bits* และ สำหรับ J-Format จะใช้ Op Code คือ `000010`
   2. **Address (Jump Target Address)** : มีความยาว *26 bits* 
