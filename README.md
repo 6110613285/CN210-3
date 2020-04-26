@@ -13,8 +13,7 @@ ________________________________________________________________________________
 
 **Jump Format** มี 2 ส่วน
 
-|Op Code (6 bits)| Address (26 bits)|
-|----------------|------------------|
+![alt text](https://github.com/gringgyy/CN210/blob/master/Untitled%20Diagram.png)
 
   ได้แก่
   1. **Op Code (Operation Code)** : มีความยาว *6 bits* และ สำหรับ J-Format จะใช้ Op Code คือ `000010`
