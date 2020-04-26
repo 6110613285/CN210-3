@@ -13,7 +13,7 @@ ________________________________________________________________________________
 
 **Jump Format** มี 2 ส่วน
 
-![alt text](jump.png)
+![alt text](Untitled Diagram.png)
 
   ได้แก่
   1. **Op Code (Operation Code)** : มีความยาว *6 bits* และ สำหรับ J-Format จะใช้ Op Code คือ `000010`
