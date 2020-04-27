@@ -189,12 +189,43 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________
 
-## HomeWork#4
+## HomeWork#4 - LW (Load Word) on Multi Cycle
 * **คลิปวีดีโอของการบ้านครั้งที่4**
 >[Click Here for HomeWork#4 video](https://youtu.be/D0uVYcWArPU)
 
 * **คำอธิบายเกี่ยวกับการบ้านครั้งที่4**
 
+Load Word มี 5ขั้นตอน
+
+![hw4-1](hw41.jpg)
+
+**1.T1 - Instruction Fetch**
+  * ดึงข้อมูลจาก Memory ในตำแหน่ง PC ไปเก็บใน Instruction Register
+  * และส่งPCไปที่ ALU เพื่อไปบวกกับ4 และส่งค่ากลับมาที่ PC เพื่อเก็บค่าของตำแหน่งที่จะทำงานตำแหน่งถัดไป
+  
+![hw4-2](hw42.jpg)
+
+**2.T2 - Instruction Decode & Register Fetch**
+  * นำค่าจากInstruction Register ไปใส่ไว้ใน A และ B
+    * A -> Reg[IR[25-21]] และ B -> Reg[IR[20-16]]
+  * นำค่า offset มาทำ sign extend จาก 16 bit เป็น 32 bit และทำการ shift ซ้าย 2ตำแหน่ง และ นำไปบวกกับค่า PC ที่ ALU และเก็บค่าไว้ที่ ALUOut
+  
+![hw4-3](hw43.jpg)
+
+**3.T3 - Memory Address Calculation**
+    * นำค่าที่เก็บใน A บวกกับ offset และ เก็บไว้ใน ALUOut
+ 
+ ![hw4-4](hw44.jpg)
+ 
+ **4.T4 - Memory Acess**
+   * นำค่าในMemory ที่ตำแหน่งALUOut ไปเก็บที่ MDR(Memory Data Register)
+ 
+ ![hw4-5](hw45.jpg)
+ 
+ **5.T5 - Write-back Step**
+   * นำค่าจาก MDR(Memory Data Register) ไปใส่ไว้ใน Reg[IR[20-16]] เป็นอันจบการทำงานของ Load Word
+   
+________________________________________________________________________________________________________________________________
 
 ## HomeWork#5 - Beq (Branch on Equal) on Multi Cycle
 * **คลิปวีดีโอของการบ้านครั้งที่5**
@@ -204,20 +235,20 @@ ________________________________________________________________________________
 
 Branch on Equal มี 3ขั้นตอน
 
-![hw4-1](hw4-1.jpg)
+![hw5-1](hw4-1.jpg)
 
 **1.T1 - Instruction Fetch**
   * ดึงข้อมูลจาก Memory ในตำแหน่ง PC ไปเก็บใน Instruction Register
   * และส่งPCไปที่ ALU เพื่อไปบวกกับ4 และส่งค่ากลับมาที่ PC เพื่อเก็บค่าของตำแหน่งที่จะทำงานตำแหน่งถัดไป
 
-![hw4-2](hw4-2.jpg)
+![hw5-2](hw4-2.jpg)
 
 **2.T2 - Instruction Decode & Register Fetch**
   * นำค่าจากInstruction Register ไปใส่ไว้ใน A และ B
     * A -> Reg[IR[25-21]] และ B -> Reg[IR[20-16]]
   * นำค่า offset มาทำ sign extend จาก 16 bit เป็น 32 bit และทำการ shift ซ้าย 2ตำแหน่ง และ นำไปบวกกับค่า PC ที่ ALU และเก็บค่าไว้ที่ ALUOut
 
-![hw4-3](hw4-3.jpg)
+![hw5-3](hw4-3.jpg)
 
 **3.T3 - Branch Completion**
   * นำค่าที่เก็บไว้ใน A และ B ไปเปรียบเทียบว่า เท่ากันหรือไม่ ถ้าเท่ากัน ค่าที่เก็บไว้ในALUOut จากขั้นตอนที่แล้วจะถูกส่งไปที่ PC เพื่อไปในตำแหน่งต่อไป
